@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+
+
+    
+    <nav class="relative bg-white/90 shadow-md backdrop-blur-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center">
+                    <span class="text-2xl font-extrabold text-indigo-600">Aventra</span>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="/" class="text-gray-900 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">Home</a>
+                        <a href="/login" class="text-gray-900 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">Login</a>
+                        <a href="/about" class="text-gray-900 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">About</a>
+                        <a href="/contact" class="text-gray-900 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>    
+    <div class="w-full min-h-screen bg-zinc-900 text-white p-10">
+        <h3 class="text-2xl font-extrabold text-indigo-600">Login to your account!</h3>
+        <form action="/login" method="post">
+
+            <input class="px-3 py-2 outline-none bg-transparent border-2 border-zinc-800 text-black" type=" password" placeholder="password" name="password">
+            <input class="px-3 py-2 outline-none bg-transparent border-2 border-zinc-800 text-black" type=" email" placeholder="email" name="email">
+
+
+            <input class="px-4 py-4 rounded-md bg-purple-500"type="submit" value="Login">
+        </form>
+    </div>
+    
+</body>
+</html>
